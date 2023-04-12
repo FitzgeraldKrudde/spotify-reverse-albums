@@ -1,6 +1,7 @@
 # spotify-reverse-albums
 This Linux bash script reverses the albums of an artist.
 It creates a new playlist with all the albums reversed.
+This is convenient when you want to play the albums with oldest first (Spotify ususally sorts newest first)
 
 Just invoke the script reverse-albums.sh to get the usage information.
 
