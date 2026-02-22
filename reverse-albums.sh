@@ -33,7 +33,8 @@ CLIENT_SECRET="3cfe8ca8492f4db0a49e85dde5af34d7"
 #
 # base64 clientid/clientsecret
 #
-b64_client_id_secret=$(echo -ne "${CLIENT_ID}":"${CLIENT_SECRET}" | base64 --wrap=0)
+b64_client_id_secret=$(printf "${CLIENT_ID}":"${CLIENT_SECRET}" | base64 --wrap=0)
+
 
 #
 # listen port for nc callback
@@ -42,7 +43,7 @@ PORT=8888
 #
 # redirect URL after providing access
 #
-REDIRECT_URI="http://localhost:${PORT}"
+REDIRECT_URI="http://127.0.0.1:${PORT}"
 
 newline=$'\n'
 
